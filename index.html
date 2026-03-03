@@ -1,16 +1,66 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Admin Dashboard</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="dashboard-container">
-        <div class="sidebar"></div>
-        <div class="header">Header</div>
-        <div class="main-content">Main Content</div>
+      <aside class="sidebar">
+        <div class="sidebar-logo">
+          <a href="">Dashboard</a>
+        </div>
+
+        <nav class="sidebar-nav-main">
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Profile</a></li>
+            <li><a href="">Messages</a></li>
+            <li><a href="">History</a></li>
+            <li><a href="">Tasks</a></li>
+            <li><a href="">Communities</a></li>
+          </ul>
+        </nav>
+
+        <nav class="sidebar-footer">
+          <ul>
+            <li><a href="">Settings</a></li>
+            <li><a href="">Support</a></li>
+            <li><a href="">Privacy</a></li>
+          </ul>
+        </nav>
+      </aside>
+      <header class="header">
+        <div class="search-bar"></div>
+        <div class="user-info-top"></div>
+        <div class="greeting-msg"></div>
+        <div class="action-buttons"></div>
+      </header>
+      <main class="main-content">
+        <section class="projects-container">
+          <div class="project"></div>
+          <div class="project"></div>
+          <div class="project"></div>
+          <div class="project"></div>
+          <div class="project"></div>
+          <div class="project"></div>
+        </section>
+        <section class="content-aside">
+          <section class="announcements-container">
+            <div class="announcement"></div>
+            <div class="announcement"></div>
+            <div class="announcement"></div>
+          </section>
+          <section class="trending-container">
+            <div class="trending-account"></div>
+            <div class="trending-account"></div>
+            <div class="trending-account"></div>
+            <div class="trending-account"></div>
+          </section>
+        </section>
+      </main>
     </div>
-</body>
+  </body>
 </html>
