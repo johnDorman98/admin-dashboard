@@ -69,13 +69,54 @@ a {
 
 .header {
   display: grid;
-  grid-template-rows: repeat(auto-fit, 1fr);
-  grid-template-columns: 2fr 1fr;
+  grid-template-rows: repeat(2, auto);
+  grid-template-columns: 1.5fr 1fr;
   justify-content: space-between;
   align-content: space-between;
+  grid-template-areas: 
+  "search info"
+  "greet buttons"
+  ;
   gap: 1rem;
   grid-row: 1 / 2;
   grid-column: 2 / 3;
+}
+
+.search-bar {
+  grid-area: search;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.user-info-top {
+  grid-area: info;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 0.5rem;
+  justify-self: end;
+}
+
+.greeting-msg {
+  grid-area: greet;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+}
+
+.action-buttons {
+  grid-area: buttons;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  gap: 1rem;
+  padding: 0 1rem;
 }
 
 .main-content {
